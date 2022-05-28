@@ -22,10 +22,7 @@ a{
     background-color: rgb(30, 31, 39);
 
 }
-.head, .body, .footer{
-    margin: 0;
-    max-width: 800px;
-}
+
 
 .header{
     position: fixed;
@@ -33,7 +30,8 @@ a{
     left: 0;
     width: 100%;
     height: auto;
-    border-style: double;
+    border-style: solid;
+    border-radius: 15px;
 
     display: flex;
     flex-flow: row;
@@ -69,8 +67,13 @@ a{
     transition: .5s;
 
 }
+.banner__image{
+    max-width: 800%;
+    width: 100%;
+    height: -50%;
+}
 
-.about{
+#about{
     display: flex;
     justify-content: space-around;
 }
@@ -101,7 +104,8 @@ a{
     width: 300%;
     height: 86%;
     margin: 2em 2em 3em 2.5em;
-    border: 2px double white;
+    border: 10px double white;
+    border-radius: 15px;
 
 }
 .projects__title{
@@ -109,7 +113,7 @@ a{
     align-content: flex-end;
     justify-content: center;
 }
-.projects{
+#projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -157,17 +161,17 @@ a{
 .footer{
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     margin: 2em;
     background-color: rgb(48, 45, 45);
     color: whitesmoke;
     text-align: center;
 }
-
-#LinkedIn{
-    display: flex;
-    justify-content: flex-end;
+.head, .body, .footer{
+    margin: 0;
 }
+
 
 
 
